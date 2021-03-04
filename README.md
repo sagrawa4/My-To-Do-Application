@@ -68,3 +68,26 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### My Notes ###
+
+# Adding state to a component :
+
+- use a class component instead of function component to use state.
+- remove function keyword, and move the JS method inside the class.
+- To add state to a component, use constructor and initialize the state.
+- to use this, call super() class inside construtor.
+- Once state is set, update the state in crement method but not directly
+-  we need to bind this to increment method inside the class.
+- to update the state, we never update state directly
+- to update state, use setState method
+- Once you call setState method, React will look what is changing and will
+    efficintly update the component state.
+- to call a locally defined method use {this.methodname}
+
+# Setsatate using ArrowFunction
+- seprate to value using comma
+- with arrow function you dont need to bind explicitly.
+
+# props
+-use defaultProps and propTypes 
