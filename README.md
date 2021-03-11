@@ -95,3 +95,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 # Use prevState in arrow function to setState
 
 # Adding Decrement button and Reset Button
+
+# Calling parent method in child.
+- Use arrow function and pass the props in function
