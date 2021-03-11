@@ -18,18 +18,21 @@ class Counter extends Component{
     render() {
         return (
           <div className="Counter">
-           <CounterButton by={+1}/>
-           <CounterButton by={+5}/>
-           <CounterButton by={+10}/>
+           <CounterButton by={+1} incrementMethod={this.increment} />
+           <CounterButton by={+5} incrementMethod={this.increment} />
+           <CounterButton by={+10} incrementMethod={this.increment} />
+            <span className="count">{this.state.counter}</span>
           </div>
         );
       }
 
-      increment(){
-        this.setState({
-            counter:this.state.counter //+ //this.props.by
-            
-        });
+      increment(by){
+
+        this.setState(
+            (prevState) => {
+                return {counter: prevState.counter + by};            
+        }
+        );
    }
 }
  class CounterButton extends Component {
@@ -49,18 +52,20 @@ class Counter extends Component{
             <div
                 className="CounterButton">
                 <button onClick={this.increment} >+{this.props.by}</button>
-                <span className="count">{this.state.counter}</span>
+                {/*<span className="count">{this.state.counter}</span>*/}
             </div>
         );
      }
 
      //Dont update state directly, use setState
      increment(){
-         this.setState({
-             counter:this.state.counter + this.props.by
-             
-         });
+         this.setState(
+             (prevState) => {
+                return {counter:prevState.counter + this.props.by}
+             });
+        this.props.incrementMethod(this.props.by);
     }
+
  }
 
  
