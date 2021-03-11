@@ -91,3 +91,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 # Props
 - Use defaultProps and propTypes 
+
+# Use prevState in arrow function to setState
+
+# Adding Decrement button and Reset Button
