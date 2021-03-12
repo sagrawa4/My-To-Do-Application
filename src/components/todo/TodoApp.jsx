@@ -4,7 +4,6 @@ class TodoApp extends Component{
     
     render(){
         return (
-
             <div className="TodoApp">
                <LoginComponent/>
             </div>
@@ -41,20 +40,15 @@ class LoginComponent extends Component{
     //}
 
     loginClicked(){
-        if(this.state.username==='shruti' && this.state.password==='yes')
-        {
+        if(this.state.username==='shruti' && this.state.password==='yes'){
             this.setState({isSucessful:true})
             this.setState({isLoginFailed:false})
         }
-        else
-        {
+        else{
             this.setState({isLoginFailed:true})
             this.setState({isSucessful:false})
         }
-        
-
     }
-    
 
     render(){
         return(
@@ -71,16 +65,14 @@ class LoginComponent extends Component{
 }
 
 function ShowInvalidCredentials(props){
-    if(props.isLoginFailed)
-    {
+    if(props.isLoginFailed){
         return <div> Invalid Credentials</div>
     }
     return null;
 }
 
 function ShowLoginSucess(props){
-    if(props.isSucessful)
-    {
+    if(props.isSucessful){
         return <div> Login Sucessful</div>
     }
     return null;

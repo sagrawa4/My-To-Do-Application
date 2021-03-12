@@ -99,9 +99,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 # Calling parent method in child.
 - Use arrow function and pass the props in function
 
-# for a control componenet
+# For a control componenet
 - Source of truth is the state of the componenet
 
-# to create a generic event for all the changes happening when a state change
+# To create a generic event for all the changes happening when a state change
 - use [event.target.name], this gives the state object that we are trying to change and 
   equate the value with event.target.value
