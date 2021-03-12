@@ -103,5 +103,22 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - Source of truth is the state of the componenet
 
 # To create a generic event for all the changes happening when a state change
-- use [event.target.name], this gives the state object that we are trying to change and 
+- use [event.target.name], this gives the state     object that we are trying to change and 
   equate the value with event.target.value
+
+# && in Reacr JSX
+- true && "myString" gives myString
+- false && "myString" gives false
+
+# Use react router to route from one component to other
+- npm add add react-router-dom
+- import {BrowserRouter as Router, Route} from 'react-router-dom'
+
+# To go from login page to welcome on click
+- Use this.props.history.push("/welcome")
+
+# Adding an error component to your route
+- Create an error component
+- Add it to your Router
+-Use Switch to move to different components
+- Dont forget to import swirch from 'react-router-dom'
