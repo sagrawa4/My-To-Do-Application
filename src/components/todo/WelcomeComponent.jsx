@@ -28,19 +28,18 @@ class WelcomeComponent extends Component{
             <div className="container"> 
             {this.state.welcomeMessage}
             </div>
-            </>
-            
+            </>    
         )
  }
 
     retrieveWelcomeMessage(){
-        HelloWorldService.executeHelloWorldService()
+        HelloWorldService.executeHelloWorldBeanService()
         .then(response =>this.handleSuccessfulResponse(response))
         //.catch()
     }
 
     handleSuccessfulResponse(response){
-this.setState({welcomeMessage:response.data })
+this.setState({welcomeMessage:response.data.message })
    }
 }
 
