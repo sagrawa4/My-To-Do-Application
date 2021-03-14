@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+/*import React, { Component } from 'react';
 
 //Class Component
 export default class FirstComponent extends Component {
@@ -9,6 +9,6 @@ export default class FirstComponent extends Component {
         </div>
       );
     }
-  }
+  }*/
 
   

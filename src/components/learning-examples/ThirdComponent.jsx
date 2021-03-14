@@ -1,4 +1,4 @@
-import React , { Component} from 'react';
+/*import React , { Component} from 'react';
 
  function ThirdComponent() {
     return (
@@ -9,4 +9,4 @@ import React , { Component} from 'react';
         );
 }
 
-export default ThirdComponent
+export default ThirdComponent*/

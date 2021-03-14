@@ -87,7 +87,7 @@ class CounterButton extends Component {
                 return {counter: prevState.counter - this.props.by}
             });
             this.props.decrementMethod(this.props.by);
-    }*/
+    }
 }
 
 export default Counter;

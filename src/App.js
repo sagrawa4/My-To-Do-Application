@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import './bootstrap.css';
 
 import TodoApp from './components/todo/TodoApp';
-import FirstComponent  from './components/learning-examples/FirstComponent';
+/*import FirstComponent  from './components/learning-examples/FirstComponent';
 import SecondComponent from './components/learning-examples/SecondComponent';
 import ThirdComponent from './components/learning-examples/ThirdComponent';
 
-import Counter from './components/learning-examples/counter/Counter';
+import Counter from './components/learning-examples/counter/Counter';*/
 
 class App extends Component {
   render() {
@@ -20,7 +20,7 @@ class App extends Component {
   }
 }
 
-class LearningComponenet extends Component {
+/*class LearningComponenet extends Component {
   render() {
     return (
       <div className="LearningComponenet">
@@ -31,6 +31,6 @@ class LearningComponenet extends Component {
       </div>
     );
   }
-}
+}*/
 
 export default App;
