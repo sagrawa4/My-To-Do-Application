@@ -125,3 +125,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 # FrameWork used to make HTTP calls is Axios
 - helps in making async calls.
+
+# To change Localhost port from 3000 to 4200
+- Goto Package.jason
+- Under Scripts "start": "PORT=4200 react-scripts start",
+
+# to install axios.
+- Stop the localhost "Control+z"
+- cmd "npm add axios"
