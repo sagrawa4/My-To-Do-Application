@@ -122,3 +122,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - Add it to your Router
 -Use Switch to move to different components
 - Dont forget to import swirch from 'react-router-dom'
+
+# FrameWork used to make HTTP calls is Axios
+- helps in making async calls.

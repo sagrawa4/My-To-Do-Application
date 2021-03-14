@@ -54,12 +54,12 @@ class Counter extends Component{
 class CounterButton extends Component {
 
     //Define initial state in constructor
-    constructor(){
-         super();
+    //constructor(){
+      //   super();
          //can be skipped if the increment method is set as arrow function
          //this.increment=this.increment.bind(this);
          //this.decrement=this.decrement.bind(this);
-    }
+    //}
 
     render() {
         return (
