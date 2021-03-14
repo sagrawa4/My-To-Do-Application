@@ -33,9 +33,13 @@ class WelcomeComponent extends Component{
  }
 
     retrieveWelcomeMessage(){
-        HelloWorldService.executeHelloWorldBeanService()
-        .then(response =>this.handleSuccessfulResponse(response))
+        //HelloWorldService.executeHelloWorldBeanService()
+        //.then(response =>this.handleSuccessfulResponse(response))
         //.catch()
+
+        HelloWorldService.executeHelloWorldPathVariableService(this.props.match.params.name)
+        .then(response =>this.handleSuccessfulResponse(response))
+        .catch()
     }
 
     handleSuccessfulResponse(response){
