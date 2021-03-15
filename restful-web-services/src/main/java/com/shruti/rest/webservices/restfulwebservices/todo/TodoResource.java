@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@CrossOrigin(origins="http://localhost:4202")
+@CrossOrigin(origins="http://localhost:4203")
 public class TodoResource {
 	
 	@Autowired
