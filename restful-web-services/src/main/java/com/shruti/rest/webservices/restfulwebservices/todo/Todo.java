@@ -10,7 +10,7 @@ public class Todo {
 	
 	
 	
-	public Todo(long id, String username, String description, boolean isCompleted, Date targetDate) {
+	public Todo(long id, String username, String description, Date targetDate, boolean isCompleted) {
 		super();
 		this.id = id;
 		this.username = username;
