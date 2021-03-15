@@ -4,19 +4,19 @@ import java.util.Date;
 public class Todo {
 	private long id;
 	private String username;
-	private String desciprion;
+	private String description;
 	private Date targetDate;
-	private boolean isDone;
+	private boolean isCompleted;
 	
 	
 	
-	public Todo(long id, String username, String desciprion, Date targetDate, boolean isDone) {
+	public Todo(long id, String username, String description, boolean isCompleted, Date targetDate) {
 		super();
 		this.id = id;
 		this.username = username;
-		this.desciprion = desciprion;
+		this.description = description;
 		this.targetDate = targetDate;
-		this.isDone = isDone;
+		this.isCompleted = isCompleted;
 	}
 	
 	public long getId() {
@@ -31,11 +31,11 @@ public class Todo {
 	public void setUsername(String username) {
 		this.username = username;
 	}
-	public String getDesciprion() {
-		return desciprion;
+	public String getDescription() {
+		return description;
 	}
-	public void setDesciprion(String desciprion) {
-		this.desciprion = desciprion;
+	public void setDescription(String description) {
+		this.description = description;
 	}
 	public Date getTargetDate() {
 		return targetDate;
@@ -43,11 +43,11 @@ public class Todo {
 	public void setTargetDate(Date targetDate) {
 		this.targetDate = targetDate;
 	}
-	public boolean isDone() {
-		return isDone;
+	public boolean isCompleted() {
+		return isCompleted;
 	}
-	public void setDone(boolean isDone) {
-		this.isDone = isDone;
+	public void setisCompleted(boolean isCompleted) {
+		this.isCompleted = isCompleted;
 	}
 	
 }

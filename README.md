@@ -133,3 +133,19 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 # to install axios.
 - Stop the localhost "Control+z"
 - cmd "npm add axios"
+
+# ComponentDidMount Lifecycle
+- 1. Component constrructor loads with initial state.
+  2. Render is called as the initial stage is loaded.
+  3. Now since component is loaded, ComponentDidMount is called.
+  4. ComponentDidMount, has setstate and the service is called which changes the state again.
+  5. Since state chnaged, render is called again.
+
+# ComonentDidUnmount
+- it is called just before a component is unmounted.
+
+# shouldComponentUpdate(nextProps,nextState)
+- returns boolean
+- once the state is updated, react looks at shouldComponentUpdate.
+- if it returns true, the updated state is reflected in the view.
+- if ir false, the updated state change is not reflrcted in the view.
